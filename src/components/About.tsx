@@ -45,10 +45,10 @@ const About: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate software developer who loves building robust, scalable applications. 
-            With expertise in modern technologies and software engineering principles, I create efficient solutions that solve real-world problems.
-          </p>
+                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              I'm a passionate software developer with experience in both web development and software development internships. 
+              With expertise in modern technologies and software engineering principles, I create efficient solutions that solve real-world problems.
+            </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -60,19 +60,20 @@ const About: React.FC = () => {
             <h3 className="text-3xl font-bold mb-6">My Journey</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               I started my journey in software development with a passion for solving complex problems through code. 
-              Over the years, I've worked on various projects ranging from small applications to large-scale 
-              enterprise systems and microservices architectures.
+              I've completed two internships - one as a web developer and another as a software developer, 
+              giving me valuable hands-on experience in both frontend and backend development.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               My approach combines solid software engineering principles with modern development practices. I believe in writing 
-              clean, maintainable code and building systems that are both efficient and scalable.
+              clean, maintainable code and building systems that are both efficient and scalable. My internship experiences 
+              have taught me the importance of collaboration, problem-solving, and continuous learning.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm font-medium">
-                5+ Years Experience
+                2 Internships
               </span>
               <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">
-                50+ Projects
+                Web & Software Dev
               </span>
               <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">
                 Full Stack
@@ -91,7 +92,11 @@ const About: React.FC = () => {
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Backend Development
+                    Web Development
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                    Software Development
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
@@ -99,15 +104,11 @@ const About: React.FC = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    System Architecture
+                    Backend Development
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    API Development
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Database Design
+                    Database Management
                   </li>
                 </ul>
               </div>

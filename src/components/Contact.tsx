@@ -45,19 +45,19 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com',
+      value: 'gungunsahu1976@gmail.com',
+      href: 'mailto:gungunsahu1976@gmail.com',
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 7061842085',
+      href: 'tel:+917061842085',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'India',
       href: '#',
     },
   ]
@@ -151,7 +151,7 @@ const Contact: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="bg-white dark:bg-dark-100 rounded-xl p-8 shadow-lg"
+            className="bg-white dark:bg-dark-100 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-700"
           >
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             

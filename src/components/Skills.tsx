@@ -75,7 +75,7 @@ const Skills: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: categoryIndex * 0.2, duration: 0.8 }}
-              className="bg-white dark:bg-dark-100 rounded-xl p-6 shadow-lg"
+              className="bg-white dark:bg-dark-100 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700"
             >
               <h3 className="text-2xl font-bold mb-6 text-center">{category.category}</h3>
               <div className="space-y-4">
@@ -123,7 +123,7 @@ const Skills: React.FC = () => {
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.8 + index * 0.05, duration: 0.5 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-white dark:bg-dark-100 rounded-lg p-4 shadow-md hover:shadow-lg transition-all duration-300"
+                className="bg-white dark:bg-dark-100 rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-primary-300"
               >
                 <span className="text-gray-700 dark:text-gray-300 font-medium">
                   {tech}

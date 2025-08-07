@@ -11,12 +11,17 @@ const Hero: React.FC = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Elements */}
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-dark-300 dark:via-dark-200 dark:to-dark-100">
+      {/* Animated Background Elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-slow"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-slow animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-40 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce-slow animation-delay-4000"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-primary-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -bottom-8 left-40 w-96 h-96 bg-gradient-to-r from-pink-200 to-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float" style={{ animationDelay: '4s' }}></div>
+        
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 opacity-30" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+        }}></div>
       </div>
 
       <div className="container-custom section-padding text-center">
@@ -33,7 +38,7 @@ const Hero: React.FC = () => {
             className="text-5xl md:text-7xl font-bold mb-6"
           >
             Hi, I'm{' '}
-            <span className="gradient-text">Your Name</span>
+            <span className="gradient-text">Gungun Rani Sahu</span>
           </motion.h1>
 
           <motion.p
@@ -42,7 +47,7 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
           >
-            Software Developer & Full Stack Engineer
+            Software Developer & Web Developer
           </motion.p>
 
           <motion.p
@@ -51,30 +56,31 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
           >
-            I build scalable software solutions and robust applications. 
-            Passionate about clean code, system design, and solving complex problems.
+            I build scalable software solutions and robust web applications. 
+            With experience in both web development and software development internships, 
+            I'm passionate about clean code and solving complex problems.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
           >
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
+              className="px-8 py-4 gradient-bg text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl glow-effect"
             >
               View My Work
             </motion.button>
             
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-4 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-full font-semibold hover:bg-primary-600 hover:text-white transition-colors"
+              className="px-8 py-4 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-full font-semibold hover:gradient-bg hover:text-white transition-all duration-300 glass-effect"
             >
               Get In Touch
             </motion.button>
@@ -88,7 +94,7 @@ const Hero: React.FC = () => {
             className="flex justify-center space-x-6 mb-12"
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/GungunRaniSahu"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -97,7 +103,7 @@ const Hero: React.FC = () => {
               <Github size={24} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/gungun-rani-300667258"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -106,7 +112,7 @@ const Hero: React.FC = () => {
               <Linkedin size={24} />
             </motion.a>
             <motion.a
-              href="mailto:your.email@example.com"
+              href="mailto:gungunsahu1976@gmail.com"
               whileHover={{ scale: 1.2, y: -5 }}
               className="p-3 bg-gray-100 dark:bg-dark-100 rounded-full hover:bg-gray-200 dark:hover:bg-dark-200 transition-colors"
             >

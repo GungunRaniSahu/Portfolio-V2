@@ -8,17 +8,17 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/GungunRaniSahu',
       icon: <Github size={20} />,
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/gungun-rani-300667258',
       icon: <Linkedin size={20} />,
     },
     {
       name: 'Email',
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:gungunsahu1976@gmail.com',
       icon: <Mail size={20} />,
     },
   ]
@@ -102,9 +102,9 @@ const Footer: React.FC = () => {
           >
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-300">
-              <p>your.email@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>gungunsahu1976@gmail.com</p>
+              <p>+91 7061842085</p>
+              <p>India</p>
             </div>
           </motion.div>
         </div>

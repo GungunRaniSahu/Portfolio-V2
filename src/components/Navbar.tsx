@@ -32,9 +32,9 @@ const Navbar: React.FC = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-white/80 dark:bg-dark-300/80 backdrop-blur-md shadow-lg'
+          ? 'glass-effect shadow-2xl'
           : 'bg-transparent'
       }`}
     >

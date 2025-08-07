@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { Globe, Palette, Zap, Atom, Circle, Rocket, Flame, Database, GitBranch, Github, GitFork, Mail, Code, FileText, Server } from 'lucide-react'
 
 const Skills: React.FC = () => {
   const [ref, inView] = useInView({
@@ -114,22 +115,46 @@ const Skills: React.FC = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-center"
         >
-                      <h3 className="text-3xl font-bold mb-8">Technologies & Tools</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {technologies.map((tech, index) => (
-              <motion.div
-                key={tech}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={inView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ delay: 0.8 + index * 0.05, duration: 0.5 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-white dark:bg-dark-100 rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-primary-300 hover-lift"
-              >
-                <span className="text-gray-700 dark:text-gray-300 font-medium">
-                  {tech}
-                </span>
-              </motion.div>
-            ))}
+          <h3 className="text-3xl font-bold mb-12">Technologies & Tools</h3>
+          
+                    {/* Fixed Grid Tech Stack */}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              {technologies.map((tech, index) => (
+                <motion.div
+                  key={tech}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white dark:bg-dark-100 border border-gray-200 dark:border-gray-600 rounded-lg px-4 py-6 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary-300 text-center"
+                >
+                  <div className="text-primary-500 mb-3 flex justify-center">
+                    {tech === 'HTML' && <Globe size={24} />}
+                    {tech === 'CSS' && <Palette size={24} />}
+                    {tech === 'JavaScript' && <Zap size={24} />}
+                    {tech === 'React' && <Atom size={24} />}
+                    {tech === 'Node.js' && <Circle size={24} />}
+                    {tech === 'Express' && <Rocket size={24} />}
+                    {tech === 'Python' && <Code size={24} />}
+                    {tech === 'Flask' && <Flame size={24} />}
+                    {tech === 'PHP' && <FileText size={24} />}
+                    {tech === 'Laravel' && <Server size={24} />}
+                    {tech === 'MySQL' && <Database size={24} />}
+                    {tech === 'MongoDB' && <Database size={24} />}
+                    {tech === 'PostgreSQL' && <Database size={24} />}
+                    {tech === 'Git' && <GitBranch size={24} />}
+                    {tech === 'GitHub' && <Github size={24} />}
+                    {tech === 'Fork' && <GitFork size={24} />}
+                    {tech === 'Postman' && <Mail size={24} />}
+                    {!['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'Python', 'Flask', 'PHP', 'Laravel', 'MySQL', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'Fork', 'Postman'].includes(tech) && <Code size={24} />}
+                  </div>
+                  <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                    {tech}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
 

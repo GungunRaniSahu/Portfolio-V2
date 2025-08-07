@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Modern portfolio website built with React and TypeScript",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

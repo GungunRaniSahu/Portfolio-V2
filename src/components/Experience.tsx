@@ -12,10 +12,10 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       company: 'OMX Digital',
-      position: 'Software Developer',
+      position: 'Software Developer Intern',
       duration: 'July 2025 - Present',
       location: 'India',
-      type: 'Current Role',
+      type: 'Current Internship',
       description: 'Working on full-stack development projects, building scalable software solutions and robust applications. Contributing to system architecture and database management.',
       technologies: ['MongoDB', 'PostgreSQL', 'MySQL', 'PHP', 'Laravel', 'React', 'Express', 'Node.js', 'Fork', 'Postman', 'GitHub'],
       icon: <Code className="w-6 h-6" />,

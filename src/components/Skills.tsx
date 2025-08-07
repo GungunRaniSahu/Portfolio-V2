@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
   const technologies = [
     'HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap',
     'Node.js', 'Express', 'PHP', 'Laravel',
-    'MySQL', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub'
+    'MySQL', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'Fork', 'Postman'
   ]
 
   return (

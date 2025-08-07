@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
       location: 'India',
       type: 'Current Internship',
       description: 'Working on full-stack development projects, building scalable software solutions and robust applications. Contributing to system architecture and database management.',
-      technologies: ['MongoDB', 'PostgreSQL', 'MySQL', 'PHP', 'Laravel', 'React', 'Express', 'Node.js', 'Fork', 'Postman', 'GitHub'],
+      technologies: ['MongoDB', 'PostgreSQL', 'MySQL', 'PHP', 'Laravel', 'React', 'Express', 'Node.js', 'Python', 'Flask', 'Fork', 'Postman', 'GitHub'],
       icon: <Code className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-600',
     },

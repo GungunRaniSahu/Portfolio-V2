@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -18,20 +19,41 @@ const Contact: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState('')
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init("HJUDL0SGqd0fapTSV") // You'll need to replace this with your actual EmailJS public key
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError('')
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const result = await emailjs.sendForm(
+        'service_kl5op14', // EmailJS service ID
+        'template_zzdwmr7', // EmailJS template ID
+        e.target as HTMLFormElement,
+        'HJUDL0SGqd0fapTSV' // EmailJS public key
+      )
+      
       setIsSubmitting(false)
       setIsSubmitted(true)
       setFormData({ name: '', email: '', subject: '', message: '' })
       
-      // Reset success message after 3 seconds
-      setTimeout(() => setIsSubmitted(false), 3000)
-    }, 1000)
+      // Reset success message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000)
+      
+    } catch (error) {
+      console.error('Email send failed:', error)
+      setIsSubmitting(false)
+      setError('Failed to send message. Please try again.')
+      
+      // Reset error message after 5 seconds
+      setTimeout(() => setError(''), 5000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -163,6 +185,17 @@ const Contact: React.FC = () => {
               >
                 <CheckCircle size={20} />
                 Message sent successfully!
+              </motion.div>
+            )}
+
+            {error && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="mb-6 p-4 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-lg flex items-center gap-2"
+              >
+                <span className="text-red-600 dark:text-red-400">⚠️</span>
+                {error}
               </motion.div>
             )}
 

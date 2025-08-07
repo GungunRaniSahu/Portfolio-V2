@@ -24,9 +24,10 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'Node.js', level: 85 },
         { name: 'Express', level: 80 },
+        { name: 'Python', level: 80 },
+        { name: 'Flask', level: 75 },
         { name: 'PHP', level: 80 },
         { name: 'Laravel', level: 75 },
-        { name: 'Python', level: 75 },
       ],
     },
     {
@@ -43,7 +44,7 @@ const Skills: React.FC = () => {
 
   const technologies = [
     'HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap',
-    'Node.js', 'Express', 'PHP', 'Laravel',
+    'Node.js', 'Express', 'Python', 'Flask', 'PHP', 'Laravel',
     'MySQL', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub', 'Fork', 'Postman'
   ]
 

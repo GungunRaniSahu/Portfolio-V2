@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
           >
-            Software Developer & Web Developer
+            Software Developer at OMX Digital
           </motion.p>
 
           <motion.p
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
           >
             I build scalable software solutions and robust web applications. 
-            With experience in both web development and software development internships, 
+            Currently working at OMX Digital with previous experience at Blueminch, 
             I'm passionate about clean code and solving complex problems.
           </motion.p>
 

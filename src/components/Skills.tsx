@@ -12,21 +12,21 @@ const Skills: React.FC = () => {
     {
       category: 'Frontend',
       skills: [
-        { name: 'HTML5', level: 95 },
-        { name: 'CSS3', level: 90 },
+        { name: 'HTML', level: 95 },
+        { name: 'CSS', level: 90 },
         { name: 'JavaScript', level: 85 },
-        { name: 'Tailwind CSS', level: 85 },
-        { name: 'Bootstrap', level: 80 },
+        { name: 'React', level: 80 },
+        { name: 'Bootstrap', level: 85 },
       ],
     },
     {
       category: 'Backend',
       skills: [
         { name: 'Node.js', level: 85 },
-        { name: 'Express.js', level: 80 },
-        { name: 'Python', level: 80 },
-        { name: 'PHP', level: 75 },
-        { name: 'Laravel', level: 70 },
+        { name: 'Express', level: 80 },
+        { name: 'PHP', level: 80 },
+        { name: 'Laravel', level: 75 },
+        { name: 'Python', level: 75 },
       ],
     },
     {
@@ -34,18 +34,17 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'MySQL', level: 85 },
         { name: 'MongoDB', level: 80 },
-        { name: 'Firebase', level: 75 },
+        { name: 'PostgreSQL', level: 75 },
         { name: 'Git', level: 90 },
-        { name: 'Postman', level: 85 },
+        { name: 'GitHub', level: 90 },
       ],
     },
   ]
 
   const technologies = [
-    'HTML5', 'CSS3', 'JavaScript', 'Python', 'C', 'C++',
-    'MySQL', 'MongoDB', 'Firebase', 'Git', 'GitHub',
-    'Express.js', 'Node.js', 'Postman', 'Tailwind CSS',
-    'Bootstrap', 'PHP', 'Laravel', 'Neon DB'
+    'HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap',
+    'Node.js', 'Express', 'PHP', 'Laravel',
+    'MySQL', 'MongoDB', 'PostgreSQL', 'Git', 'GitHub'
   ]
 
   return (

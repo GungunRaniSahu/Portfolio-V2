@@ -128,19 +128,19 @@ const Contact: React.FC = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="mt-8 p-6 bg-gradient-to-r from-primary-500 to-purple-600 rounded-xl text-white"
             >
-              <h4 className="text-xl font-bold mb-3">Available for:</h4>
+              <h4 className="text-xl font-bold mb-3">Current Status:</h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Full-time positions
+                  Software Developer at OMX Digital
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Freelance projects
+                  Available for new opportunities
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                  Consulting work
+                  Open to freelance projects
                 </li>
               </ul>
             </motion.div>

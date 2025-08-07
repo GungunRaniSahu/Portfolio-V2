@@ -57,26 +57,25 @@ const About: React.FC = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <h3 className="text-3xl font-bold mb-6">My Journey</h3>
+            <h3 className="text-3xl font-bold mb-6">About Me</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              I started my journey in software development with a passion for solving complex problems through code. 
-              I've completed two internships - one as a web developer and another as a software developer, 
-              giving me valuable hands-on experience in both frontend and backend development.
+              I'm a passionate software developer with a strong foundation in both frontend and backend development. 
+              My journey started with web development fundamentals and has evolved into full-stack software development.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               My approach combines solid software engineering principles with modern development practices. I believe in writing 
-              clean, maintainable code and building systems that are both efficient and scalable. My internship experiences 
-              have taught me the importance of collaboration, problem-solving, and continuous learning.
+              clean, maintainable code and building systems that are both efficient and scalable. I'm always eager to learn 
+              new technologies and solve complex problems.
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm font-medium">
-                2 Internships
+                Full Stack Developer
               </span>
               <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">
-                Web & Software Dev
+                Problem Solver
               </span>
               <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">
-                Full Stack
+                Continuous Learner
               </span>
             </div>
           </motion.div>
@@ -87,31 +86,31 @@ const About: React.FC = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="relative"
           >
-                          <div className="bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl p-8 text-white">
-                <h4 className="text-2xl font-bold mb-4">What I Do</h4>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Web Development
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Software Development
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Frontend Development
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Backend Development
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                    Database Management
-                  </li>
-                </ul>
-              </div>
+            <div className="bg-gradient-to-br from-primary-500 to-purple-600 rounded-2xl p-8 text-white">
+              <h4 className="text-2xl font-bold mb-4">What I Do</h4>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Web Development
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Software Development
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Frontend Development
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Backend Development
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
+                  Database Management
+                </li>
+              </ul>
+            </div>
           </motion.div>
         </div>
 

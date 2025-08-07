@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             className="text-5xl md:text-7xl font-bold mb-6"
           >
             Hi, I'm{' '}
-            <span className="gradient-text">Gungun Rani Sahu</span>
+            <span className="text-gradient-animate">Gungun Rani Sahu</span>
           </motion.h1>
 
           <motion.p
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-4 gradient-bg text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl glow-effect"
+              className="px-8 py-4 gradient-bg text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl hover-glow"
             >
               View My Work
             </motion.button>
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-4 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-full font-semibold hover:gradient-bg hover:text-white transition-all duration-300 glass-effect"
+              className="px-8 py-4 border-2 border-primary-600 text-primary-600 dark:text-primary-400 rounded-full font-semibold hover:gradient-bg hover:text-white transition-all duration-300 glass-effect hover-lift"
             >
               Get In Touch
             </motion.button>

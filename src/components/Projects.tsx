@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1, duration: 0.8 }}
-              className={`bg-white dark:bg-dark-100 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 hover:border-primary-300 ${
+              className={`bg-white dark:bg-dark-100 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700 hover:border-primary-300 hover-lift ${
                 project.featured ? 'lg:col-span-2' : ''
               }`}
             >

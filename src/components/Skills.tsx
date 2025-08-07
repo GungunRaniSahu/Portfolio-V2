@@ -89,7 +89,7 @@ const Skills: React.FC = () => {
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${skill.level}%` } : {}}
@@ -97,7 +97,7 @@ const Skills: React.FC = () => {
                           delay: categoryIndex * 0.2 + skillIndex * 0.1,
                           duration: 1,
                         }}
-                        className="bg-gradient-to-r from-primary-500 to-purple-600 h-2 rounded-full"
+                        className="bg-gradient-to-r from-primary-500 to-purple-600 h-2 rounded-full animate-gradient-shift"
                       />
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const Skills: React.FC = () => {
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.8 + index * 0.05, duration: 0.5 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-white dark:bg-dark-100 rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-primary-300"
+                className="bg-white dark:bg-dark-100 rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-primary-300 hover-lift"
               >
                 <span className="text-gray-700 dark:text-gray-300 font-medium">
                   {tech}

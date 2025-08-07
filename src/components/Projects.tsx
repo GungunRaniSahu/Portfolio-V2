@@ -20,6 +20,15 @@ const Projects: React.FC = () => {
       featured: true,
     },
     {
+      title: 'Firebase Task Manager',
+      description: 'A task management application built with Firebase for real-time data synchronization, user authentication, and cloud storage.',
+      image: '/api/placeholder/400/250',
+      technologies: ['Firebase', 'JavaScript', 'HTML', 'CSS', 'Real-time DB'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/GungunRaniSahu/Firebase-Task-Manager',
+      featured: false,
+    },
+    {
       title: 'Job Board Platform',
       description: 'A full-stack job board application with separate frontend and backend. Features job posting, application management, and user authentication.',
       image: '/api/placeholder/400/250',
@@ -62,15 +71,6 @@ const Projects: React.FC = () => {
       technologies: ['JavaScript', 'HTML', 'CSS', 'Sports API'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/GungunRaniSahu/Cricket-Crunch',
-      featured: false,
-    },
-    {
-      title: 'Firebase Task Manager',
-      description: 'A task management application built with Firebase for real-time data synchronization, user authentication, and cloud storage.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Firebase', 'JavaScript', 'HTML', 'CSS', 'Real-time DB'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/GungunRaniSahu/Firebase-Task-Manager',
       featured: false,
     },
   ]

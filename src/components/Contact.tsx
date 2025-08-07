@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
     setError('')
     
     try {
-      const result = await emailjs.sendForm(
+      await emailjs.sendForm(
         'service_kl5op14', // EmailJS service ID
         'template_zzdwmr7', // EmailJS template ID
         e.target as HTMLFormElement,
